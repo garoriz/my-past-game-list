@@ -37,6 +37,8 @@ services:
   service-db:
     image: postgres:14.7-alpine
     environment:
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
       PGUSER: username
       PGPASSWORD: password
     ports:
